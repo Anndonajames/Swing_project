@@ -169,7 +169,9 @@ public class Java {
 		JButton button_2 = new JButton("+ / -");
 		button_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				double n1=Double.parseDouble(textField.getText());
+				String a1=String.format("%.2f", n1);
+				textField.setText(" "+a1);
 			}
 		});
 		button_2.setBounds(186, 128, 57, 63);

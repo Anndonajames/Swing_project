@@ -5,12 +5,16 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.UIManager;
 import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
+import javax.swing.ListSelectionModel;
+
 import java.awt.Font;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
@@ -470,6 +474,32 @@ public class javastudent {
 		JButton btnShowReport = new JButton("Show Report");
 		btnShowReport.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				
+				
+			/*	ListSelectionModel cellSelectionModel = table.getSelectionModel();
+				cellSelectionModel.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+
+				cellSelectionModel.addListSelectionListener(new ListSelectionListener() {
+				  public void valueChanged(ListSelectionEvent e) {
+				    String selectedData = null;
+
+				    int[] selectedRow = table.getSelectedRows();
+				    int[] selectedColumns = table.getSelectedColumns();
+
+				    for (int i = 0; i < selectedColumns.length; i++) {
+				      for (int j = 0; j < selectedColumns.length; j++) {
+				        selectedData = (String) table.getValueAt(selectedRow[i], selectedColumns[j]);
+				        System.out.println("Selected: " + selectedData);
+				      }
+				    }
+				    
+				  }
+
+				});*/
+				
+				
+				
 				txtareaShowReport.append("Student Record\n"
 				+"Student Name:\t\t"+textField_1.getText()+" "+textField_2.getText()
 				+"\n=====================================\n"

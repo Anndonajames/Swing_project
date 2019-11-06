@@ -533,6 +533,21 @@ public class javaticketbooking {
 		panel.add(table);
 		
 		JButton btnDelete = new JButton("Delete");
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				DefaultTableModel model=(DefaultTableModel)table.getModel();
+				try
+				{
+					int row=table.getSelectedRow();
+					model.removeRow(row);
+				}
+				catch(Exception msg)
+				{
+					JOptionPane.showMessageDialog(null, "Please choose the particular row");
+				
+				}
+			}
+		});
 		btnDelete.setBounds(299, 493, 97, 25);
 		panel.add(btnDelete);
 	
